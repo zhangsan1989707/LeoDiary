@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leo日记</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_calendar">日历</string>
+    <string name="nav_profile">我的</string>
+    <string name="add_diary">写日记</string>
+    <string name="view_diary">查看日记</string>
+    <string name="edit_diary">编辑日记</string>
+    <string name="delete_diary">删除日记</string>
+    <string name="diary_title_hint">输入标题...</string>
+    <string name="diary_content_hint">开始写日记...</string>
+    <string name="diary_tag_hint">添加标签</string>
+    <string name="save_diary">保存</string>
+    <string name="cancel_diary">取消</string>
+    <string name="delete_diary_confirm">确定要删除这篇日记吗？</string>
+    <string name="confirm">确定</string>
+    <string name="no_diary_title">无标题日记</string>
+    <string name="no_diaries">暂无日记，点击右下角按钮添加</string>
+    <string name="today_diary">今日日记</string>
+    <string name="recent_diaries">最近日记</string>
+    <string name="all_diaries">全部日记</string>
+    <string name="diary_statistics">日记统计</string>
+    <string name="total_diaries">总日记数</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="logout">退出登录</string>
+    <string name="version">版本</string>
+    <string name="copyright">© 2023 Leo日记. 保留所有权利。</string>
+    <string name="search_hint">搜索日记...</string>
+    <string name="filter_by_tag">按标签筛选</string>
+    <string name="sort_by_date">按日期排序</string>
+    <string name="sort_by_title">按标题排序</string>
+</resources>

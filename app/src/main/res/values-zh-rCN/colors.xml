@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6B6B</color>
+    <color name="colorPrimaryDark">#FF5252</color>
+    <color name="colorAccent">#4ECDC4</color>
+    <color name="colorBackground">#F7F9FC</color>
+    <color name="colorTextPrimary">#2D3748</color>
+    <color name="colorTextSecondary">#718096</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorDivider">#E2E8F0</color>
+    <color name="colorShadow">#0000001A</color>
+    <color name="colorFabBackground">#FF6B6B</color>
+    <color name="colorCompletedTask">#4ECDC4</color>
+    <color name="colorPendingTask">#2D3748</color>
+    <color name="colorDelete">#FF5252</color>
+    <color name="colorEdit">#4ECDC4</color>
+</resources>

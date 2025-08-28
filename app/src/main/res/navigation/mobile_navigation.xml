@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.leodiary.ui.home.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.leodiary.ui.calendar.CalendarFragment"
+        android:label="日历"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.leodiary.ui.profile.ProfileFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/add_diary_fragment"
+        android:name="com.example.leodiary.ui.diary.AddDiaryFragment"
+        android:label="写日记"
+        tools:layout="@layout/fragment_add_diary">
+        <action
+            android:id="@+id/action_add_diary_fragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/view_diary_fragment"
+        android:name="com.example.leodiary.ui.diary.ViewDiaryFragment"
+        android:label="查看日记"
+        tools:layout="@layout/fragment_view_diary">
+        <action
+            android:id="@+id/action_view_diary_fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+</navigation>
