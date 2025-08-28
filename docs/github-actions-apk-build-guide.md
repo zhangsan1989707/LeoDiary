@@ -146,10 +146,11 @@ on:
 2. 检查构建日志中是否有关于APK生成的错误信息
 3. 验证APK输出路径是否与配置文件中指定的路径一致
 
-## 注意事项
+### 注意事项
 
 1. GitHub Actions构建有时间限制，超过限制会被自动终止
 2. 构建产物（APK文件）默认保存90天
 3. 敏感信息（如签名密钥）应使用GitHub Secrets存储，不要直接写入配置文件
-4. **重要：** 根据GitHub公告，actions/upload-artifact和actions/download-artifact的v3版本将于2025年1月30日停止支持。当前配置已更新为使用v4版本，该版本提供了高达98%的上传和下载速度提升。
-5. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
+4. 由于项目中不存在gradlew文件，工作流已配置为直接使用gradle命令而非./gradlew命令
+5. **重要：** 根据GitHub公告，actions/upload-artifact和actions/download-artifact的v3版本将于2025年1月30日停止支持。当前配置已更新为使用v4版本，该版本提供了高达98%的上传和下载速度提升。
+6. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
