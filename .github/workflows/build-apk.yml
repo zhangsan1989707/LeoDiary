@@ -1,6 +1,4 @@
-name: Build Signed APK
-name: Build and Release APK
-
+name: Build and signed apk and Release APK
 on:
   push:
     branches: [ main, master ]
