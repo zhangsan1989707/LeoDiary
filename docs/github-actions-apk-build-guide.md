@@ -83,7 +83,7 @@ git push origin master  # 或您当前使用的分支名称
 ### 构建环境说明
 
 - **操作系统**：Ubuntu最新版本
-- **JDK版本**：Java 11
+- **JDK版本**：Java 17
 - **Gradle版本**：项目中配置的Gradle 7.5
 - **Android Gradle Plugin版本**：7.3.1
 
@@ -153,4 +153,5 @@ on:
 3. 敏感信息（如签名密钥）应使用GitHub Secrets存储，不要直接写入配置文件
 4. 由于项目中不存在gradlew文件，工作流已配置为直接使用gradle命令而非./gradlew命令
 5. **重要：** 根据GitHub公告，actions/upload-artifact和actions/download-artifact的v3版本将于2025年1月30日停止支持。当前配置已更新为使用v4版本，该版本提供了高达98%的上传和下载速度提升。
-6. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
+6. **重要：** 工作流已从JDK 11更新为JDK 17，这是因为GitHub Actions环境中默认使用的Gradle 9.0.0需要JVM 17或更高版本才能运行。
+7. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
