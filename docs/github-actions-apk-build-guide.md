@@ -151,4 +151,5 @@ on:
 1. GitHub Actions构建有时间限制，超过限制会被自动终止
 2. 构建产物（APK文件）默认保存90天
 3. 敏感信息（如签名密钥）应使用GitHub Secrets存储，不要直接写入配置文件
-4. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
+4. **重要：** 根据GitHub公告，actions/upload-artifact和actions/download-artifact的v3版本将于2025年1月30日停止支持。当前配置已更新为使用v4版本，该版本提供了高达98%的上传和下载速度提升。
+5. 定期更新GitHub Actions使用的各个action版本，以获取最新功能和安全修复
